@@ -17,11 +17,7 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
     quiet: false
 })
 
-var hotMiddleware = require('webpack-hot-middleware')(compiler, {
-    log: false,
-    path: "/",
-    heartbeat: 2000, reload: true
-})
+var hotMiddleware = require('webpack-hot-middleware')(compiler)
 const serve = (path, cache) => express.static(resolve(path), {
     maxAge: 0
 })
