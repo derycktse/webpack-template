@@ -3,7 +3,7 @@ const path = require('path')
 const resolve = file => path.resolve(__dirname, file)
 const express = require('express')
 const webpack = require('webpack')
-let webpackConfig = require('./webpack.base.conf')
+let webpackConfig = require('./webpack.dev.conf')
 let compiler = webpack(webpackConfig)
 
 const PORT = process.env.PORT || 8081
