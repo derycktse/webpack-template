@@ -3,4 +3,10 @@
 // document.body.appendChild(h1)
 
 require('./style.css')
-document.getElementById('container').innerHTML ="13"
+
+
+let fun = ()=>{
+    document.getElementById('container').innerHTML = "deryck"
+}
+
+fun()
