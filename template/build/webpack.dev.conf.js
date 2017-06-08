@@ -13,7 +13,7 @@ let webpackConfig = merge(baseWebpackConfig, {
     devtool: '#cheap-module-eval-source-map',
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoEmitOnErrorsPlugin()
     ]
 })
 

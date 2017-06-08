@@ -4,8 +4,9 @@
   "description": "webpack scaffold template",
   "main": "index.js",
   "scripts": {
-    "dev": "node build/server.js",
+    "dev": "cross-env NODE_ENV=dev node build/server.js",
     "build": "node build/build.js",
+    "start": "cross-env NODE_ENV=production node build/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,7 +16,12 @@
   "author": "Derycktse",
   "license": "MIT",
   "devDependencies": {
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.10.2",
     "webpack-hot-middleware": "^2.18.0",
