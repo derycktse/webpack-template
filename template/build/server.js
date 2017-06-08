@@ -11,6 +11,7 @@ const app = express()
 if (process.env.NODE_ENV === 'dev') {
     require('./dev-server')(app)
 }
+require('./kk-server')(app)
 
 // const template = fs.readFileSync(resolve('../pages/index.html'))
 
